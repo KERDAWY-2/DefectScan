@@ -1,0 +1,91 @@
+# ───────────── Secrets & keys (NEVER commit) ─────────────
+*.pem
+*.key
+.env
+.env.*
+*.secret
+secrets.*
+
+# ───────────── Python ─────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ───────────── Virtual environments (committed venv is GB-scale, exceeds GitHub limits) ─────────────
+venv/
+.venv/
+env/
+**/venv/
+
+# ───────────── Databases & runtime data ─────────────
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+**/uploads/
+
+# ───────────── ML weights & datasets (single files exceed GitHub's 100 MB limit) ─────────────
+*.pt
+*.pth
+*.onnx
+*.weights
+**/data/
+ML2/damage_images/
+
+# ───────────── Flutter / Dart / Android ─────────────
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/android/.gradle/
+*.iml
+
+# ───────────── IDE / editor ─────────────
+.idea/
+*.swp
+
+# ───────────── Agent / local tooling ─────────────
+.claude/
+.gemini/
+
+# ───────────── OS ─────────────
+.DS_Store
+Thumbs.db
+
+# ───────────── Reference material (not ours to publish) ─────────────
+BrickInvest Final Documentation.pdf
+
+# ───────────── Published repo = app code + ML notebooks only; everything below is kept local ─────────────
+/figures/
+/screenshots/
+/temp/
+/DOCUMENTATION.html
+/DOCUMENTATION.md
+/DOCUMENTATION.pdf
+/DOCUMENTATION.png
+/DOCUMENTATION.jpeg
+/DOCUMENTATION_v1_technical.md
+/pdf-style.css
+/README.md
+/DEPLOYMENT.md
+/GEMINI.md
+/CLAUDE.md
+/check_users.py
+/create_admin.py
+/make_model.py
+/new_main.py
+/new_main_pytorch.py
+/new_main_timm.py
+/test_integration.py
+/test_predict.py
+/verify.py
+/verify.sh
+/predict.sh
+/setup.sh
+/tt
+/python backend/main.py
